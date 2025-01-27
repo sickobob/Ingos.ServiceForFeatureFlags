@@ -1,0 +1,1 @@
+C:\Users\User\source\repos\Ingos.ServiceForFeatureFlags\ingos.serviceforfeatureflags.client\obj\Debug\ingos.serviceforfeatureflags.client.esproj.CoreCompileInputs.cache

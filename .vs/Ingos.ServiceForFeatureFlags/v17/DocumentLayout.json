@@ -1,0 +1,337 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.server\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|solutionrelative:ingos.serviceforfeatureflags.server\\controllers\\apicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.server\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|solutionrelative:ingos.serviceforfeatureflags.server\\models\\setting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|solutionrelative:ingos.serviceforfeatureflags.server\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|solutionrelative:ingos.serviceforfeatureflags.server\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4C047C9-6502-4375-9485-B20DD7ACD775}|Ingos.ServiceForFeatureFlags.Server\\Ingos.ServiceForFeatureFlags.Server.csproj|solutionrelative:ingos.serviceforfeatureflags.server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\angular.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\angular.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\aspnetcore-https.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\aspnetcore-https.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\app\\app.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\app\\app.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\tsconfig.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\.vscode\\launch.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\proxy.conf.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\proxy.conf.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|c:\\users\\user\\source\\repos\\ingos.serviceforfeatureflags\\ingos.serviceforfeatureflags.client\\src\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{3003C409-332E-4B3E-A946-0A7238C124D4}|ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj|solutionrelative:ingos.serviceforfeatureflags.client\\src\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\index.html",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\index.html",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\index.html",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-26T14:09:51.762Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Setting.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Models\\Setting.cs",
+              "RelativeDocumentMoniker": "Ingos.ServiceForFeatureFlags.Server\\Models\\Setting.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Models\\Setting.cs",
+              "RelativeToolTip": "Ingos.ServiceForFeatureFlags.Server\\Models\\Setting.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T07:40:59.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApiController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Controllers\\ApiController.cs",
+              "RelativeDocumentMoniker": "Ingos.ServiceForFeatureFlags.Server\\Controllers\\ApiController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Controllers\\ApiController.cs",
+              "RelativeToolTip": "Ingos.ServiceForFeatureFlags.Server\\Controllers\\ApiController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T11:13:03.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "app.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app.component.spec.ts",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\app\\app.component.spec.ts",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app.component.spec.ts",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\app\\app.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-26T14:32:30.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "angular.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\angular.json",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\angular.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\angular.json",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\angular.json",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T14:32:19.84Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "aspnetcore-https.js",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\aspnetcore-https.js",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\aspnetcore-https.js",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\aspnetcore-https.js",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\aspnetcore-https.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-26T14:32:05.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "package.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\package.json",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\package.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\package.json",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\package.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T14:31:40.263Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Ingos.ServiceForFeatureFlags.Server\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Ingos.ServiceForFeatureFlags.Server\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T14:24:01.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\.gitignore",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\.gitignore",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\.gitignore",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
+              "WhenOpened": "2024-12-28T08:01:17.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-26T14:43:44.1Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Ingos.ServiceForFeatureFlags.Server\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\WeatherForecast.cs",
+              "RelativeToolTip": "Ingos.ServiceForFeatureFlags.Server\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T14:23:06.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app.module.ts",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-26T14:32:33.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Program.cs",
+              "RelativeDocumentMoniker": "Ingos.ServiceForFeatureFlags.Server\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\Program.cs",
+              "RelativeToolTip": "Ingos.ServiceForFeatureFlags.Server\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T14:23:02.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "app.component.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app.component.css",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\app\\app.component.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\app\\app.component.css",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\app\\app.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-26T14:43:33.062Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "tsconfig.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\tsconfig.json",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\tsconfig.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\tsconfig.json",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\tsconfig.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T14:31:43.228Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launch.json",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\.vscode\\launch.json",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\.vscode\\launch.json",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\.vscode\\launch.json",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\.vscode\\launch.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-12-26T14:22:56.977Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\main.ts",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\main.ts",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\main.ts",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\main.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2024-12-26T14:22:29.088Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "proxy.conf.js",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\proxy.conf.js",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\proxy.conf.js",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\proxy.conf.js",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\proxy.conf.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-26T14:22:27.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\styles.css",
+              "RelativeDocumentMoniker": "ingos.serviceforfeatureflags.client\\src\\styles.css",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\src\\styles.css",
+              "RelativeToolTip": "ingos.serviceforfeatureflags.client\\src\\styles.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-12-26T14:22:25.608Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

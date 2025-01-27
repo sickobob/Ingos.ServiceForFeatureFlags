@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Ingos.ServiceForFeatureFlags.Server.props" />
+</Project>

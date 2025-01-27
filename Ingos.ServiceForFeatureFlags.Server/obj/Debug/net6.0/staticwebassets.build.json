@@ -1,0 +1,24 @@
+{
+  "Version": 1,
+  "Hash": "0cUwkyidVbFNuUIhUbZq7OFjX6Ro1jPtgnvEdU4xVmc=",
+  "Source": "Ingos.ServiceForFeatureFlags.Server",
+  "BasePath": "_content/Ingos.ServiceForFeatureFlags.Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\ingos.serviceforfeatureflags.client\\ingos.serviceforfeatureflags.client.esproj",
+      "Version": 2,
+      "Source": "ingos.serviceforfeatureflags.client",
+      "GetPublishAssetsTargets": "GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework;RuntimeIdentifier;SelfContained"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

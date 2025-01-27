@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:50357",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\User\\source\\repos\\Ingos.ServiceForFeatureFlags\\Ingos.ServiceForFeatureFlags.Server\\..\\ingos.serviceforfeatureflags.client",
+"MaxTimeoutInSeconds": "120"
+}
+}
