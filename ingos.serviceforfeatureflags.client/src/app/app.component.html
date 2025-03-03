@@ -1,25 +1,94 @@
-﻿<h1 id="tableLabel">Weather forecast</h1>
+﻿<!-- Кнопка Connect -->
+<button class="connect-btn" (click)="connect()">Connect</button>
 
-<p>This component demonstrates fetching data from the server.</p>
+<!-- Вкладки с текстовыми полями -->
+<!-- HTML -->
+<div class="tab">
+  <!-- Левый сегмент -->
+  <div class="tab-segment left">
+    <button class="tablinks" (click)="openTab('Table1')" [class.active]="activeTab === 'Table1'">Таблица 1</button>
+    <div class="search-group">
+      <input type="text" [(ngModel)]="inputTable1" placeholder="Поиск по Таблице 1" class="tab-input">
+      <button class="search-btn" (click)="searchTable1()">Найти</button>
+    </div>
+  </div>
 
-<p *ngIf="!forecasts"><em>Loading... Please refresh once the ASP.NET backend has started. See <a
-  href="https://aka.ms/jspsintegrationangular">https://aka.ms/jspsintegrationangular</a> for more details.</em></p>
+  <!-- Правый сегмент -->
+  <div class="tab-segment right">
+    <button class="tablinks" (click)="openTab('Table2')" [class.active]="activeTab === 'Table2'">Таблица 2</button>
+    <div class="search-group">
+      <input type="text" [(ngModel)]="inputTable2" placeholder="Поиск по Таблице 2" class="tab-input">
+      <button class="search-btn" (click)="SettingsService.getSetting(inputTable2,'setting') ">Найти</button>
+    </div>
+  </div>
+  <div class="tab-segment save">
+    <button>save </button>
+  </div>
+</div>
 
-<table *ngIf="forecasts">
-  <thead>
-  <tr>
-    <th>Date</th>
-    <th>Temp. (C)</th>
-    <th>Temp. (F)</th>
-    <th>Summary</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr *ngFor="let forecast of forecasts">
-    <td>{{ forecast.date }}</td>
-    <td>{{ forecast.temperatureC }}</td>
-    <td>{{ forecast.temperatureF }}</td>
-    <td>{{ forecast.summary }}</td>
-  </tr>
-  </tbody>
-</table>
+<!-- Таблица 1 (для setting, где boolvalue == true) -->
+<div id="Table1" class="tabcontent" *ngIf="activeTab === 'Table1'">
+  <table>
+    <thead>
+    <tr>
+      <th>code</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>boolValue</th>
+      <th>stringValue</th>
+      <th>intValue</th>
+      <th>datetime</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody *ngIf="!isSearchTab1">
+    <tr *ngFor="let setting of settings">
+      <td>{{ setting.code }}</td>
+      <td>{{ setting.name }}</td>
+      <td>{{ setting.status }}</td>
+      <td>{{ setting.boolValue }}</td>
+      <td>{{ setting.stringValue }}</td>
+      <td>{{ setting.intValue }}</td>
+      <td>{{ setting.datetime  }}</td>
+      <td>{{ setting.description }}</td>
+    </tr>
+    </tbody>
+    <tbody *ngIf="isSearchTab1">
+    <tr>
+      <td>{{ filteredSetting?.code }}</td>
+      <td>{{ filteredSetting?.description }}</td>
+      <td>{{ filteredSetting?.boolValue }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Таблица 2 (пустая, для примера) -->
+<div id="Table2" class="tabcontent" *ngIf="activeTab === 'Table2'">
+  <table>
+    <thead>
+    <tr>
+      <th>code</th>
+      <th>Name</th>
+      <th>Status</th>
+      <th>boolValue</th>
+      <th>stringValue</th>
+      <th>intValue</th>
+      <th>datetime</th>
+      <th>Description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let setting of settings.">
+      <td>{{ setting.code }}</td>
+      <td>{{ setting.name }}</td>
+      <td>{{ setting.status }}</td>
+      <td><input type="checkbox" [(ngModel)]="setting.boolValue">{{setting.boolValue}}<td>
+      <td>{{ setting.stringValue }}</td>
+      <td>{{ setting.intValue }}</td>
+      <td>{{ setting.datetime }}</td>
+      <td>{{ setting.description }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

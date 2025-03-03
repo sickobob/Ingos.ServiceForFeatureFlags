@@ -1,38 +1,35 @@
-using System.Data;
-using System.Reflection;
 using System.Text;
 using Ingos.ServiceForFeatureFlags.Server.Models;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.OpenApi.Expressions;
+using Microsoft.Extensions.Caching.Memory;
 using Npgsql;
-using NpgsqlTypes;
 
-namespace Ingos.ServiceForFeatureFlags.Server.Helpers;
+namespace Ingos.ServiceForFeatureFlags.Server.Services;
 
 public class PostgreSqlService
 {
-    private readonly string _connectionString;
+    readonly string _connectionString;
     NpgsqlConnection Conn;
-    List<Setting> Settings;
+    readonly IMemoryCache _cache;
+    private readonly List<string> _settingsKeys = new List<string>();
+    
 
-    public PostgreSqlService(IConfiguration configuration)
+    public PostgreSqlService(IConfiguration configuration, IMemoryCache memoryCache)
     {
         _connectionString = configuration.GetConnectionString("DefaultConnection");
         Conn = new NpgsqlConnection(_connectionString);
         Conn.Open();
-        Settings = GetAllSettings();
+        _cache = memoryCache;
+        GetAllSettings();
     }
 
-    List<Setting> GetAllSettings()
+    void GetAllSettings()
     {
-        var settings = new List<Setting>();
         string query = "SELECT * FROM settings";
         using var cmd = new NpgsqlCommand(query, Conn);
         using var reader = cmd.ExecuteReader();
         while (reader.Read())
         {
-            settings.Add(new Setting
+            var setting = new Setting
             {
                 Type = reader["setting_type"].ToString()!,
                 Code = reader["code"].ToString()!,
@@ -43,9 +40,35 @@ public class PostgreSqlService
                 IntValue = (int)reader["intvalue"],
                 BoolValue = (bool)reader["boolvalue"],
                 Description = reader["description"].ToString()
-            });
-        }
+            };
+            if (_settingsKeys.Contains(setting.Code))
+            {
+                _cache.TryGetValue(setting.Code, out Setting cacheSetting);
+                if (setting.Equals(cacheSetting))
+                {
+                    cacheSetting = setting;
+                }
+            }
+            else
+            {
 
+
+
+                //дделать ли проверку на существование в кэшэ, но может быть возможность изменения в базе, тогда кэш бюудет тоже обновлен
+                _cache.Set(setting.Code, setting);
+                _settingsKeys.Add(setting.Code);
+            }
+        }
+    }
+
+    public List<Setting> RetrieveAllSettings()
+    {
+        GetAllSettings();
+        List<Setting> settings =new List<Setting>(); ;
+        foreach (var key in _settingsKeys)
+        {
+            settings.Add(_cache.Get<Setting>(key));
+        }
         return settings;
     }
 
@@ -58,26 +81,26 @@ public class PostgreSqlService
         using var cmd = new NpgsqlCommand(insertQuery, Conn);
         var parameters = new[]
         {
-            new NpgsqlParameter("setting_type", setting.Type),
-            new NpgsqlParameter("code", setting.Code),
-            new NpgsqlParameter("setting_name", setting.Name),
-            new NpgsqlParameter("status", setting.Status),
-            new NpgsqlParameter("datetime", setting.DateTime),
-            new NpgsqlParameter("stringvalue", setting.StringValue),
-            new NpgsqlParameter("intvalue", setting.IntValue),
-            new NpgsqlParameter("boolvalue", setting.BoolValue),
-            new NpgsqlParameter("description", setting.Description)
+            new NpgsqlParameter("@setting_type", setting.Type),
+            new NpgsqlParameter("@code", setting.Code),
+            new NpgsqlParameter("@setting_name", setting.Name),
+            new NpgsqlParameter("@status", setting.Status),
+            new NpgsqlParameter("@datetime", setting.DateTime),
+            new NpgsqlParameter("@stringvalue", setting.StringValue),
+            new NpgsqlParameter("@intvalue", setting.IntValue),
+            new NpgsqlParameter("@boolvalue", setting.BoolValue),
+            new NpgsqlParameter("@description", setting.Description)
         };
 
         cmd.Parameters.AddRange(parameters);
         int rowsAffected = cmd.ExecuteNonQuery();
 
-        Settings.Add(setting);
+        _cache.Set(setting.Code, setting);
     }
 
     public bool IsExistSetting(string code)
     {
-        if (Settings.Any(s => s.Code == code)) return true;
+        if(_cache.TryGetValue(code, out Setting? setting)) return true;
 
         string countQuery = @"SELECT count(1) from settings where code = @code";
         using var cmd = new NpgsqlCommand(countQuery, Conn);
@@ -91,7 +114,7 @@ public class PostgreSqlService
 
     public Setting GetSetting(string code, string setting_type)
     {
-        if (Settings.Any(s => s.Code == code)) return Settings.First(s => s.Code == code);
+        if(_cache.TryGetValue(code, out Setting? s)) return s;
         string selectQuery =
             @"SELECT * from settings where code = @code and setting_type = @setting_type";
 
@@ -120,9 +143,9 @@ public class PostgreSqlService
         return null;
     }
 
-    public bool UpdateSetting(string code, bool status, DateTime datetime = default, string stringvalue = "Undefined",
-        int intvalue = 0)
+    public bool UpdateSetting(string code, bool status, DateTime datetime = default, string stringvalue = "Undefined", int intvalue = 0)
     {
+        //добавить условие авторизации
         if (IsExistSetting(code))
         {
             var updateQuery = new StringBuilder("UPDATE settings SET status = @status");
@@ -185,7 +208,7 @@ public class PostgreSqlService
             using var cmd = new NpgsqlCommand(deleteQuery, Conn);
             cmd.Parameters.AddWithValue("@code", code);
             int rowsAffected = cmd.ExecuteNonQuery();
-            Settings.Remove(Settings.First(s => s.Code == code));
+           _cache.Remove(code);
 
             return true;
         }
@@ -193,14 +216,12 @@ public class PostgreSqlService
         return false;
     }
 
-    void UpdateCacheSettings(string code, Setting changedSettingFields, bool dateTimeFlg, bool stringValueFlg,
-        bool intValueFlg)
+    void UpdateCacheSettings(string code, Setting changedSettingFields, bool dateTimeFlg, bool stringValueFlg, bool intValueFlg)
     {
-        var setting = Settings.First(s => s.Code == code);
+        var setting = (Setting)_cache.Get(code);
 
         if (dateTimeFlg) setting.DateTime = changedSettingFields.DateTime;
         if (stringValueFlg) setting.StringValue = changedSettingFields.StringValue;
         if (intValueFlg) setting.IntValue = changedSettingFields.IntValue;
-        //cамое топорное решение
     }
 }

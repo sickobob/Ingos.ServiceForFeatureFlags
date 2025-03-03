@@ -83,3 +83,4 @@ C:\Users\User\source\repos\Ingos.ServiceForFeatureFlags\Ingos.ServiceForFeatureF
 C:\Users\User\source\repos\Ingos.ServiceForFeatureFlags\Ingos.ServiceForFeatureFlags.Server\bin\Debug\net6.0\Npgsql.dll
 C:\Users\User\source\repos\Ingos.ServiceForFeatureFlags\Ingos.ServiceForFeatureFlags.Server\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\User\source\repos\Ingos.ServiceForFeatureFlags\Ingos.ServiceForFeatureFlags.Server\bin\Debug\net6.0\Npgsql.EntityFrameworkCore.PostgreSQL.Design.dll
+C:\Users\User\source\repos\Ingos.ServiceForFeatureFlags\Ingos.ServiceForFeatureFlags.Server\obj\Debug\net6.0\Ingos.ServiceForFeatureFlags.Server.sourcelink.json

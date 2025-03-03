@@ -1,14 +1,129 @@
-﻿:host {
-  max-width: 1280px;
-  padding: 2rem;
-  text-align: center;
+﻿/* Стили для кнопки Connect */
+.connect-btn {
+  background-color: #808080; /* Серый цвет */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.connect-btn:hover {
+  background-color: #6c6c6c; /* Темнее серый при наведении */
+}
+
+/* Стили для вкладок */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  margin-top: 10px; /* Отступ от кнопки */
+}
+
+/* Стили кнопок вкладок */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Стили для таблиц */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
 }
 
 th, td {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
 }
 
-table {
-  margin: 0 auto;
+th {
+  background-color: #f2f2f2;
+}
+/* Контейнер вкладок */
+.tab {
+  display: flex;
+  justify-content: left; /* Распределение пространства */
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Общие стили для сегментов */
+.tab-segment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Левый сегмент - прижат к левому краю */
+.tab-segment.left {
+  justify-content: flex-start;
+}
+
+/* Правый сегмент - прижат к правому краю */
+.tab-segment.right {
+  justify-content: center;
+}
+
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .tab {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-segment {
+    justify-content: space-between !important;
+  }
+}/* Стили для группы поиска */
+.search-group {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+/* Стили для кнопки Найти */
+.search-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: #45a049;
+}
+
+/* Адаптация для мобильных */
+@media (max-width: 768px) {
+  .search-group {
+    width: 100%;
+  }
+
+  .tab-input {
+    flex-grow: 1;
+  }
 }
