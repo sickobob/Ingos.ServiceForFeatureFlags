@@ -11,6 +11,6 @@
         public int? IntValue { get; set; }
         public bool? BoolValue { get; set; }
         public string? Description { get; set; }
-
+        public string Isn_Name { get; set; }
     }
 }

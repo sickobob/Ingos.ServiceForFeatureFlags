@@ -1,21 +1,34 @@
 using Ingos.ServiceForFeatureFlags.Server;
 using Ingos.ServiceForFeatureFlags.Server.Services;
+using Microsoft.AspNetCore.Authentication.Negotiate;
 
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)
+    .AddNegotiate();
+builder.Services.AddAuthorization();
 // Add services to the container.
 builder.Configuration.AddJsonFile("appsettings.json", true, true);
+builder.Services.AddCors(options => 
+{
+    options.AddPolicy("AllowFrontend", policy => 
+    {
+        policy.WithOrigins("https://127.0.0.1:50357")
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials(); // Разрешить передачу аутентификации
+    });
+});
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddMemoryCache();
 builder.Services.AddSingleton<PostgreSqlService>();
-builder.Services.AddCors(options => options.AddPolicy("AllowAll",
-    builder => builder
-        .AllowAnyOrigin()
-        .AllowAnyMethod()
-        .AllowAnyHeader()));
+
 var app = builder.Build();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.UseDefaultFiles();
 app.UseStaticFiles();
@@ -29,8 +42,10 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-app.UseCors("AllowAll");
+app.UseCors("AllowFrontend");
+
+
 app.MapControllers();
 app.MapFallbackToFile("/index.html");
+
 app.Run();

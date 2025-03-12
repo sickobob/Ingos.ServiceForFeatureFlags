@@ -1,15 +1,34 @@
-﻿<!-- Кнопка Connect -->
-<button class="connect-btn" (click)="connect()">Connect</button>
+﻿<div>
+  <!-- Выпадающий список для выбора базы -->
+  <select [(ngModel)]="selectedDatabase" (change)="onDatabaseChange()">
+    <option value="">Выберите базу данных</option>
+    <option *ngFor="let db of dbNames" [value]="db">
+      {{ db }}
+    </option>
+    <option value="custom">Ввести свою строку подключения</option>
+  </select>
 
-<!-- Вкладки с текстовыми полями -->
+  <!-- Поле для ввода своей строки -->
+  <div *ngIf="isCustomDatabase">
+    <input
+      type="text"
+      [(ngModel)]="customConnectionString"
+      placeholder="Введите строку подключения"
+    >
+  </div>
+  <!-- Кнопка Connect -->
+  <button (click)="connect()">Connect</button>
+</div>
 <!-- HTML -->
 <div class="tab">
   <!-- Левый сегмент -->
   <div class="tab-segment left">
     <button class="tablinks" (click)="openTab('Table1')" [class.active]="activeTab === 'Table1'">Таблица 1</button>
     <div class="search-group">
-      <input type="text" [(ngModel)]="inputTable1" placeholder="Поиск по Таблице 1" class="tab-input">
-      <button class="search-btn" (click)="searchTable1()">Найти</button>
+      <input type="text" [(ngModel)]="inputTable1" placeholder="Поиск по коду в Таблице 1" class="tab-input">
+      <button class="search-btn" (click)="search(inputTable1,settingsTypeString)"
+              [class.active]="activeTab === 'Table1'">Найти
+      </button>
     </div>
   </div>
 
@@ -17,16 +36,20 @@
   <div class="tab-segment right">
     <button class="tablinks" (click)="openTab('Table2')" [class.active]="activeTab === 'Table2'">Таблица 2</button>
     <div class="search-group">
-      <input type="text" [(ngModel)]="inputTable2" placeholder="Поиск по Таблице 2" class="tab-input">
-      <button class="search-btn" (click)="SettingsService.getSetting(inputTable2,'setting') ">Найти</button>
+      <input type="text" [(ngModel)]="inputTable2" placeholder="Поиск по коду в Таблице 2" class="tab-input">
+      <button class="search-btn" (click)="search(inputTable2,settingsTypeFt)" [class.active]="activeTab === 'Table2'">
+        Найти
+      </button>
     </div>
   </div>
   <div class="tab-segment save">
-    <button>save </button>
+    <button class="save-btn" (click)="filteredSetting && filteredSetting.code!=='' && saveSetting(filteredSetting)">
+      Сохранить
+    </button>
   </div>
 </div>
 
-<!-- Таблица 1 (для setting, где boolvalue == true) -->
+<!-- Таблица 1 -->
 <div id="Table1" class="tabcontent" *ngIf="activeTab === 'Table1'">
   <table>
     <thead>
@@ -35,35 +58,34 @@
       <th>Name</th>
       <th>Status</th>
       <th>boolValue</th>
-      <th>stringValue</th>
+      <th>type</th>
       <th>intValue</th>
-      <th>datetime</th>
       <th>Description</th>
     </tr>
     </thead>
-    <tbody *ngIf="!isSearchTab1">
-    <tr *ngFor="let setting of settings">
+    <tbody *ngIf="!isSearchTab; else unset">
+    <tr *ngFor="let setting of this.settingsTypeString ">
       <td>{{ setting.code }}</td>
       <td>{{ setting.name }}</td>
       <td>{{ setting.status }}</td>
       <td>{{ setting.boolValue }}</td>
-      <td>{{ setting.stringValue }}</td>
+      <td>{{ setting.type }}</td>
       <td>{{ setting.intValue }}</td>
-      <td>{{ setting.datetime  }}</td>
       <td>{{ setting.description }}</td>
     </tr>
     </tbody>
-    <tbody *ngIf="isSearchTab1">
-    <tr>
-      <td>{{ filteredSetting?.code }}</td>
-      <td>{{ filteredSetting?.description }}</td>
-      <td>{{ filteredSetting?.boolValue }}</td>
-    </tr>
-    </tbody>
+    <ng-template #unset>
+      <tbody>
+      <tr>
+        <td>{{ filteredSetting?.code }}</td>
+        <td>{{ filteredSetting?.description }}</td>
+        <td>{{ filteredSetting?.boolValue }}</td>
+      </tr>
+      </tbody>
+    </ng-template>
   </table>
 </div>
-
-<!-- Таблица 2 (пустая, для примера) -->
+<!-- Таблица 2 -->
 <div id="Table2" class="tabcontent" *ngIf="activeTab === 'Table2'">
   <table>
     <thead>
@@ -71,24 +93,55 @@
       <th>code</th>
       <th>Name</th>
       <th>Status</th>
-      <th>boolValue</th>
-      <th>stringValue</th>
+      <th>type</th>
       <th>intValue</th>
-      <th>datetime</th>
       <th>Description</th>
     </tr>
     </thead>
-    <tbody>
-    <tr *ngFor="let setting of settings.">
+    <tbody *ngIf="!isSearchTab; else unset">
+    <tr *ngFor="let setting of this.settingsTypeFt">
       <td>{{ setting.code }}</td>
       <td>{{ setting.name }}</td>
-      <td>{{ setting.status }}</td>
-      <td><input type="checkbox" [(ngModel)]="setting.boolValue">{{setting.boolValue}}<td>
-      <td>{{ setting.stringValue }}</td>
+      <td>
+        <label class="custom-checkbox">
+          <input
+            type="checkbox"
+            [(ngModel)]="setting.status"
+            (ngModelChange)="onCheckboxChange(setting)"
+            class="hidden-checkbox"
+          />
+          <span class="custom-checkmark"></span>
+          <span class="checkbox-label">
+      {{ setting.status ? 'Включено' : 'Выключено' }}
+    </span>
+        </label>
+      </td>
+      <td>{{ setting.type }}</td>
       <td>{{ setting.intValue }}</td>
-      <td>{{ setting.datetime }}</td>
       <td>{{ setting.description }}</td>
     </tr>
     </tbody>
+    <ng-template #unset>
+      <tbody *ngIf="filteredSetting && filteredSetting.code !== ''">
+      <tr>
+        <td>{{ filteredSetting.code }}</td>
+        <td>{{ filteredSetting.description }}</td>
+        <td>
+          <label class="custom-checkbox">
+            <input
+              type="checkbox"
+              [(ngModel)]="filteredSetting.status"
+              (ngModelChange)="onCheckboxChange(filteredSetting!)"
+              class="hidden-checkbox"
+            />
+            <span class="custom-checkmark"></span>
+            <span class="checkbox-label">
+         {{ filteredSetting.status ? 'Включено' : 'Выключено' }}
+    </span>
+          </label>
+        </td>
+      </tr>
+      </tbody>
+    </ng-template>
   </table>
 </div>

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Ingos.ServiceForFeatureFlags.Server")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b962411e54851c6d2e805ddd6e37642015f7b8e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f4e9d564c345feeb78996a8c9e55ef36e60b3529")]
 [assembly: System.Reflection.AssemblyProductAttribute("Ingos.ServiceForFeatureFlags.Server")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Ingos.ServiceForFeatureFlags.Server")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "Ingos.ServiceForFeatureFlags.Server/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Negotiate": "6.0.36",
           "Microsoft.AspNetCore.SpaProxy": "6.0.36",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.36",
           "Newtonsoft.Json": "13.0.3",
@@ -17,6 +18,30 @@
         },
         "runtime": {
           "Ingos.ServiceForFeatureFlags.Server.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Authentication.Negotiate/6.0.36": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Connections.Abstractions": "6.0.36",
+          "System.DirectoryServices.Protocols": "6.0.2"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Negotiate.dll": {
+            "assemblyVersion": "6.0.36.0",
+            "fileVersion": "6.0.3624.51604"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Connections.Abstractions/6.0.36": {
+        "dependencies": {
+          "Microsoft.Extensions.Features": "6.0.36",
+          "System.IO.Pipelines": "6.0.3"
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Connections.Abstractions.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51604"
+          }
         }
       },
       "Microsoft.AspNetCore.SpaProxy/6.0.36": {
@@ -201,6 +226,14 @@
         }
       },
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {},
+      "Microsoft.Extensions.Features/6.0.36": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.Features.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.3624.51604"
+          }
+        }
+      },
       "Microsoft.Extensions.Logging/6.0.1": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "6.0.2",
@@ -638,6 +671,34 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "System.DirectoryServices.Protocols/6.0.2": {
+        "runtime": {
+          "lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "assemblyVersion": "6.0.0.2",
+            "fileVersion": "6.0.1823.26907"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "linux",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.2",
+            "fileVersion": "6.0.1823.26907"
+          },
+          "runtimes/osx/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "osx",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.2",
+            "fileVersion": "6.0.1823.26907"
+          },
+          "runtimes/win/lib/net6.0/System.DirectoryServices.Protocols.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "6.0.0.2",
+            "fileVersion": "6.0.1823.26907"
+          }
+        }
+      },
       "System.Drawing.Common/4.7.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.9",
@@ -757,6 +818,14 @@
       "System.IO.FileSystem.Primitives/4.3.0": {
         "dependencies": {
           "System.Runtime": "4.3.0"
+        }
+      },
+      "System.IO.Pipelines/6.0.3": {
+        "runtime": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.522.21309"
+          }
         }
       },
       "System.Linq/4.3.0": {
@@ -1236,6 +1305,20 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.AspNetCore.Authentication.Negotiate/6.0.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+FP8n6Xl+nFPd8xcTt7dGCqvs5fYELtsXWtnzbgd95U2V7ShpUcPvveHBmkq3bNaD05ZcWoYdzya4Slb3kz0CQ==",
+      "path": "microsoft.aspnetcore.authentication.negotiate/6.0.36",
+      "hashPath": "microsoft.aspnetcore.authentication.negotiate.6.0.36.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Connections.Abstractions/6.0.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gX3H4RcuWcnsd5ujmKX1vXXNrbVnXNUHc/aEnylWrY1s+v+9em8JckzAZKyGFAYv7plI/xU7qOhbZr3A6lOyoA==",
+      "path": "microsoft.aspnetcore.connections.abstractions/6.0.36",
+      "hashPath": "microsoft.aspnetcore.connections.abstractions.6.0.36.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.SpaProxy/6.0.36": {
       "type": "package",
       "serviceable": true,
@@ -1347,6 +1430,13 @@
       "sha512": "sha512-xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
       "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
       "hashPath": "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+    },
+    "Microsoft.Extensions.Features/6.0.36": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FO2BIAj0ANaabYLp5z8FySOJi4xb/E2A9G15eLtF4zJ+9qNHMatpow34h6xQ26D6LGfUC5EfCq/3CWlpNkXjPw==",
+      "path": "microsoft.extensions.features/6.0.36",
+      "hashPath": "microsoft.extensions.features.6.0.36.nupkg.sha512"
     },
     "Microsoft.Extensions.Logging/6.0.1": {
       "type": "package",
@@ -1719,6 +1809,13 @@
       "path": "system.diagnostics.tracing/4.3.0",
       "hashPath": "system.diagnostics.tracing.4.3.0.nupkg.sha512"
     },
+    "System.DirectoryServices.Protocols/6.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vDDPWwHn3/DNZ+kPkdXHoada+tKPEC9bVqDOr4hK6HBSP7hGCUTA0Zw6WU5qpGaqa5M1/V+axHMIv+DNEbIf6g==",
+      "path": "system.directoryservices.protocols/6.0.2",
+      "hashPath": "system.directoryservices.protocols.6.0.2.nupkg.sha512"
+    },
     "System.Drawing.Common/4.7.3": {
       "type": "package",
       "serviceable": true,
@@ -1788,6 +1885,13 @@
       "sha512": "sha512-6QOb2XFLch7bEc4lIcJH49nJN2HV+OC3fHDgsLVsBVBk3Y4hFAnOBGzJ2lUu7CyDDFo9IBWkSsnbkT6IBwwiMw==",
       "path": "system.io.filesystem.primitives/4.3.0",
       "hashPath": "system.io.filesystem.primitives.4.3.0.nupkg.sha512"
+    },
+    "System.IO.Pipelines/6.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ryTgF+iFkpGZY1vRQhfCzX0xTdlV3pyaTTqRu2ETbEv+HlV7O6y7hyQURnghNIXvctl5DuZ//Dpks6HdL/Txgw==",
+      "path": "system.io.pipelines/6.0.3",
+      "hashPath": "system.io.pipelines.6.0.3.nupkg.sha512"
     },
     "System.Linq/4.3.0": {
       "type": "package",
